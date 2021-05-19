@@ -1,0 +1,155 @@
+/*
+ Theme Name:     Conference
+ Theme URI:      https://conference.gregorythemes.com/
+ Description:    Premium Child Theme for Conference and Event
+ Author:         Gregory THEMES
+ Author URI:     https://gregorythemes.com/
+ Template:       Divi
+ Version:        1.0.0
+ License:     	 GNU General Public License v2 or later
+ License URI: 	 http://www.gnu.org/licenses/gpl-2.0.html
+*/
+ 
+ 
+/*----------Theme CSS----------*/
+
+/* Home Page Title Buttons */
+.gt_inline_button .et_pb_button_module_wrapper {
+	display: inline-block;
+  margin: 10px 10px!important;
+}
+
+.gt_inline_button {
+	text-align: center!important;
+	min-width: 150px;
+}
+
+/* Menu CTA Button */
+.gt_get_tickets a {
+	border: solid 2px!important;
+	padding: 15px 25px !important;
+	margin-bottom: 15px;
+  text-transform: uppercase;
+	color: white!important;
+}
+
+/* Mobile Menu */
+@media (max-width: 980px) {
+#main-header {
+	background-color: transparent!important;
+}
+
+.et_mobile_menu a {
+	text-align: center;
+}
+}
+
+/* Back To Top Button */
+.et_pb_scroll_top.et-pb-icon {
+	right: 20px;
+	bottom: 20px;
+	border-radius: 0px;
+	padding: 10px;
+	background: rgba(0,0,0,0.5);
+}
+
+.et_pb_scroll_top.et-pb-icon:hover {
+	bottom: 23px;
+}
+
+.et_pb_scroll_top:before {
+	content: "\21";
+}
+
+/* Speakers Home Section */
+.gt_speaker_slider img {
+	border-radius: 50%;
+}
+
+/* Speakers Person Module */
+.gt_speaker img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.gt_speaker:hover img {
+	-webkit-filter: brightness(40%);
+	filter: brightness(40%);
+}
+
+.gt_speaker .et_pb_team_member_description {
+	position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+	padding: 10px;
+	visibility: hidden;
+	opacity: 0;
+  transition: .5s ease;
+}
+
+.gt_speaker:hover .et_pb_team_member_description {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* Schedule Style */
+@media (min-width: 981px) {
+.gt_schedule_layout .gt_column_1 {
+	width: 10%!important;
+	margin: auto!important;
+}
+
+.gt_schedule_layout .gt_column_2 {
+	width: 20%!important;
+	margin: auto!important;
+}
+
+.gt_schedule_layout .gt_column_3 {
+	width: 60%!important;
+	margin: auto!important;
+}
+}
+
+.gt_schedule_speaker img {
+	max-width: 70px;
+	border-radius: 50%;
+	margin: auto!important;
+}
+
+/* News & Blog */
+.gt_blog a.more-link {
+	border: 2px solid;
+	padding: 5px 10px;
+	text-transform: capitalize;
+}
+
+.gt_blog p {
+	margin-bottom: 20px;
+}
+
+/* Social Media Icon */
+.gt_social_media_follow li a.icon::before {
+	font-size: 20px!important;
+}
+
+.gt_social_media_follow li a.icon {
+	padding: 10px;
+	margin: 5px;
+	background-color: transparent!important;
+	border: solid 2px white;
+	border-radius: 50%;
+}
+
+.gt_social_media_follow li a.icon:hover::before{
+	color: black!important;
+}
+
+.gt_social_media_follow li a.icon:hover {
+	background-color: white!important;
+}
+
+/* Footer */
+#footer-bottom {
+padding: 0px!important;
+}
