@@ -1,2 +1,0 @@
-jQuery(function($){var olddays=$('.et_pb_countdown_timer .days .value');olddays.each(function(){var oldday=$(this);oldday.after(oldday.clone());oldday.next().wrap('<span></span>');}).hide();(function update_days(){olddays.each(function(){var oldday=$(this);var days=oldday.html();if(days.substr(0,1)=='0'){days=days.slice(1);}
-oldday.next().find('.value').html(days);});setTimeout(function(){update_days();},1000);})()});jQuery(function($){});
